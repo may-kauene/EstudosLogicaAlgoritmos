@@ -1,18 +1,18 @@
 algoritmo "ConteAte10"
 var
-   contador : Inteiro
+   valor, salto, contador : Inteiro
 inicio
    contador <- 0
-   Enquanto (contador <= 10) faca
+   Escreva("Quer contar ate quanto? ")
+   Leia(valor)
+   Escreva("Qual sera o salto? ")
+   Leia(salto)
+   
+   Enquanto (contador <= valor) faca
       Escreval(contador)
-      contador <- contador + 1
+      contador <- contador + salto
    FimEnquanto
-   Escreval("Terminei de contar de 0 a 10")
+   
+   Escreval("Terminei de contar")
 
-   contador <- 10
-   Enquanto (contador >= 0) faca
-      Escreval(contador)
-      contador <- contador - 1
-   FimEnquanto
-   Escreval("Terminei de contar de 10 a 0")
 fimalgoritmo
